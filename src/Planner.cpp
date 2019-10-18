@@ -9,7 +9,7 @@ Planner::Planner(ros::NodeHandle &nh) : nh_(nh) {
 }
 
 void Planner::CallbackMap(const nav_msgs::OccupancyGrid::ConstPtr &msg_map) {
-  int attempts = 20;
+  int attempts = 100;
   int inf_counter = 0;
   for (size_t j = 0; j < attempts; ++j) {
 

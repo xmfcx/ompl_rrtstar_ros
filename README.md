@@ -4,14 +4,15 @@ A quick and very dirty implementation of RRT* on ROS.
 Used https://ompl.kavrakilab.org/optimalPlanningTutorial.html and many other tutorials
 on StateValidityChecker, StateSampler and MotionValidator.
 
-## Running
+## Building and Running
 
- * Open an rviz window with the configuration file .../ompl_rrtstar_ros/rviz_stuff/ompl.rviz
- * Build it using catkin_make
+ * mkdir -p ~/catkin_ws/src/
+ * cd ~/catkin_ws/src/
+ * git clone https://github.com/xmfcx/ompl_rrtstar_ros.git
+ * cd ..
+ * catkin_make
  * source devel/setup.bash
- * rosrun ompl_rrtstar_ros ompl_rrtstar_ros
- * in another terminal navigate to .../ompl_rrtstar_ros/maps
- * rosrun map_server map_server map4.yaml
+ * roslaunch ompl_rrtstar_ros ompl_rrtstar_ros.launch
  
 You should see the following
 

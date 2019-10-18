@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="ompl_rrtstar_ros" type="ompl_rrtstar_ros" name="ompl_rrtstar_ros_node"  output="screen"/>
+
+  <node pkg="map_server" type="map_server" name="map_server_node" args="$(find ompl_rrtstar_ros)/maps/map4.yaml"  output="screen"/>
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find ompl_rrtstar_ros)/rviz_stuff/ompl.rviz" />
+</launch>
