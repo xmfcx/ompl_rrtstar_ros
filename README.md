@@ -5,8 +5,11 @@ Used https://ompl.kavrakilab.org/optimalPlanningTutorial.html and many other tut
 on StateValidityChecker, StateSampler and MotionValidator.
 
 ## Dependencies
- * ROS Kinetic or above?
- * sudo apt-get install ros-`rosversion -d`-ompl
+ * ROS Kinetic or above
+```bash
+sudo apt install ros-`rosversion -d`-ompl \ 
+ ros-melodic-map-server
+```
 
 ## Building and Running
 
